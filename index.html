@@ -4,32 +4,337 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Link Css and Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile-menu.css">
-    <title>Wagner Santos</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <!--JS-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav> 
-            <a href="" class="logo">WS</a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg align-items-start">
+    <button class="navbar-toggler" type="button" id="menu-toggle">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  
+  <!-- Content -->
+  <div class="d-flex" id="wrapper">
+  
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper" style="z-index: 1">
+      <div class="list-group list-group-flush bg-white" id="sidenav">
+        <a class="d-flex align-items-center border-bottom p-3 text-secondary home active"><i class="lni lni-home size-sm pr-4 font-24"></i>Home</a>
+        <a class="d-flex align-items-center border-bottom p-3 text-secondary acad" id="acad"><i class="lni lni-graduation size-sm pr-4 font-24"></i></i>Formação Acadêmica</a>
+        <a class="d-flex align-items-center border-bottom p-3 text-secondary adm" id="adm"><i class="lni lni-briefcase size-sm pr-4 font-24"></i>Experiência Profissional</a>
+        <a class="d-flex align-items-center border-bottom p-3 text-secondary hability"><i class="lni lni-invention size-sm pr-4 font-24"></i>Conhecimentos e Habilidades</a>
+        <a class="d-flex align-items-center border-bottom p-3 text-secondary project"><i class="lni lni-write size-sm pr-4 font-24"></i>Projetos</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+  
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+  
+      <div class="container-fluid px-lg-5">
+      
+  
+        <div class="row py-3">
+          <div class="col-md-8">
+            <div class="home display fadeInUp" style="display: block">
+              <div class="container">
+                <div class="row my-3 my-md-5">
+                  <div class="card rounded-lg border-0 cards-short w-100">
+                    <div class="row">
+                      <div class="col-sm-6 order-1 order-sm-1">
+                        <h4 class="text-primary pt-3 pt-sm-5 pl-3 pl-lg-4 pr-3">Wagner Santos de Jesus</h4>
+                      </div>
+                      <div class="col-sm-6 d-flex d-lg-block d-lg-block align-items-center justify-content-center order-0 order-sm-1">
+                        <img src="" data-swap="" class="img-fluid" style="margin-top: -25px;width: 75%;">
+                      </div>
+                      <div class="col-12 order-2 order-sm-1">
+                        <p class="px-3 pt-2 pb-3 text-banner" style="color: #5584bc; font-size: 15px">
+                            Sou um desenvolvedor Jr, que se aventura em algumas linguagens de programação. Entusiasta por novas tecnologias e em constante evolução pessoal e profissional. Amplo conhecimento em áreas em que contribui com meu conhecimento em desenvolvimento, contribuindo na criação de planilhas mais dinâmicas e na contribuição nas rotinas internas por onde fiz parte.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main></main>
 
-    <script src="js/app.js"></script>
+            <div class="home display fadeInUp" style="display:block">
+            <div class="container">
+                <div class="grid">
+                  <a href="https://api.whatsapp.com/send?phone=5511990117632" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover">
+                    <img src="assets/img/phone.svg" width="50px">
+                    <p class="text-primary text-center text-break pt-2"> Contato</p>
+                  </a>
+                  <a href="mailto:wagner.jesus98@outlook.com" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover">
+                    <img src="assets/img/envelope.svg" width="50px">
+                    <p class="text-center text-break pt-2" style="color: #e84f4b;"> Email</p>
+                  </a>
+                  <a href="https://github.com/WagnerSantos98" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover">
+                    <img src="assets/img/github-original.svg" width="50px">
+                    <p class="text-center text-break pt-2" style="color: #455a64;"> GitHub</p>
+                  </a>
+                  <a href="https://www.linkedin.com/in/wagnersjesus/" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover">
+                    <img src="assets/img/linkedin.svg" width="50px">
+                    <p class="text-center text-break pt-2" style="color: #0288d1;"> LinkedIn</p>
+                  </a>
+                </div>
+            </div> 
+            </div>   
+  
+            <div class="acad display fadeInUp" style="display: none">
+              <h3 class="mt-4">Formação Acadêmica</h3>
+              <div class="container">
+                <div class="row mb-5">
+
+                    <div class="row my-4 fadeInUp delay-1">
+                        <div class="tabs tabs-style-linemove homenews">
+                          <nav class="rounded-menu">
+                            <ul style="max-width: 250px !important;margin: 0">
+                              <li><a href="#section-linemove-5"><span>Atualmente</span></a></li>
+                              <li><a href="#section-linemove-4"><span>Anteriores</span></a></li>
+                            </ul>
+                          </nav>
+                          <div class="content-wrap news mt-2 text-right">
+                            <section id="section-linemove-5">
+                              <a href="#" class="card-news shadow-card rounded-lg">
+                                <i class="lni lni-star-fill"></i>
+                                <div class="text">
+                                  <h5 class="card-news-title pb-2">Cursando Pós-Graduação em Data Science</h5>
+                                  <span class="card-news-description" style="font-weight: bold;">2023 <br>Universidade São Francisco (USF)
+                                  </span><br>
+                                  
+                                </div>
+                              </a>
+                            </section>
+                            <section id="section-linemove-4">
+                              <a href="#" class="card-news shadow-card rounded-lg">
+                                <div class="text">
+                                  <h5 class="card-news-title pb-2">Análise e Desenvolvimento de Sistemas</h5>
+                                  <span class="card-news-description" style="font-weight: bold;">2019  <br>Centro Universitário UNIFAAT</span>
+                                </div>
+                              </a>
+                              <a href="#" class="card-news shadow-card rounded-lg">
+                                <div class="text">
+                                  <h5 class="card-news-title pb-2">Instituição de Ensino Público</h5>
+                                  <span class="card-news-description" style="font-weight: bold;">2015 <br>Escola Estadual Cásper Líbero</span>
+                                </div>
+                              </a>
+                            </section>
+                          </div><!-- /content -->
+                        </div><!-- Fim Grids -->
+                      </div>
+                  
+                 
+  
+                  </div><!-- Fim Grids -->
+                </div>
+              </div>
+            </div> <!-- Controle de Display -->
+  
+            <div class="adm display fadeInUp" style="display: none">
+              <h3 class="mt-4">Experiência Profissional</h3>
+              <div class="container">
+                <div class="row mb-5">
+                 
+  
+                    <div class="row my-4 fadeInUp delay-1">
+                        <div class="tabs tabs-style-linemove homenews">
+                          <nav class="rounded-menu">
+                            <ul style="max-width: 250px !important;margin: 0">
+                              <li><a href="#section-linemove-5"><span>Atualmente</span></a></li>
+                              <li><a href="#section-linemove-4"><span>Anteriores</span></a></li>
+                            </ul>
+                          </nav>
+                          <div class="content-wrap news mt-2 text-right">
+                            <section id="section-linemove-5">
+                              <a href="#" class="card-news shadow-card rounded-lg">
+                                <i class="lni lni-star-fill"></i>
+                                <div class="text">
+                                  <h5 class="card-news-title pb-2">Técnico de Suporte Júnior</h5>
+                                  <span class="card-news-description" style="font-weight: bold;">Casa Nossa Senha da Paz | Nov. de 2020 - presente
+                                  </span><br>
+                                  <span class="card-news-description">Rotina de preparação de equipamentos para aulas e eventos para docentes, discentes e funcionários.
+                                    Configuração de computadores e internet para uso dos mesmos.
+                                    Manutenção em equipamentos de TI (computadores, impressoras, switches e projetores)
+                                    Utilização de plataforma GSuite, GLPI e Active Directory (Citrix) para atendimentos de chamados técnicos.
+                                    Suporte ao usuário N1, N2 e N3
+                                  </span>
+                                </div>
+                              </a>
+                            </section>
+                            <section id="section-linemove-4">
+                              <a href="#" class="card-news shadow-card rounded-lg">
+                                <div class="text">
+                                  <h5 class="card-news-title pb-2">Instrutor de Curso</h5>
+                                  <span class="card-news-description" style="font-weight: bold;">Microlins | Fev. de 2020 - Nov. de 2020
+                                </span><br>
+                                <span class="card-news-description">Atuava como instrutor em uma escola de programação de disponibiliza cursos como: Programação, Robótica, Criação de Games, Youtube, Criação de Aplicativos e Informática Básica.
+                                </span>
+                                </div>
+                              </a>
+                              <a href="#" class="card-news shadow-card rounded-lg">
+                                <div class="text">
+                                  <h5 class="card-news-title pb-2">Estoquista</h5>
+                                  <span class="card-news-description" style="font-weight: bold;">Elétrica Apolo EIRELI | Jun. de 2018 - Ago. de 2019
+                                </span><br>
+                                <span class="card-news-description">Realizava reposição de mercadorias, organização de estoque, entrada de notas e separação de materiais.
+                                </span>
+                                </div>
+                              </a>
+                              <a href="#" class="card-news shadow-card rounded-lg">
+                                <div class="text">
+                                  <h5 class="card-news-title pb-2">Estagiário</h5>
+                                  <span class="card-news-description" style="font-weight: bold;">Centro Paula Souza | Fev. de 2018 - Jun. de 2018
+                                </span><br>
+                                <span class="card-news-description">Era estagiário responsável por toda manutenção e gerenciamento dos equipamentos, utilizando dos Conhecimentos
+                                  que adquiri durante a graduação.
+                                </span>
+                                </div>
+                              </a>
+                              <a href="#" class="card-news shadow-card rounded-lg">
+                                <div class="text">
+                                  <h5 class="card-news-title pb-2">Auxiliar Mecânico de Manutenção</h5>
+                                  <span class="card-news-description" style="font-weight: bold;">TECOMP - Tecnologia em Compressores | Dez. de 2015 - Abr. de 2017
+                                </span><br>
+                                <span class="card-news-description">Atuava em todo processo no auxilio da manutenção de compressores instalados em empresas, consultórios médicos e afins.
+                                </span>
+                                </div>
+                              </a>
+                              <a href="#" class="card-news shadow-card rounded-lg">
+                                <div class="text">
+                                  <h5 class="card-news-title pb-2">Repositor</h5>
+                                  <span class="card-news-description" style="font-weight: bold;">Supermercado Hiper Chicão | Jun. de 2014 - Abr. de 2015
+                                </span><br>
+                                <span class="card-news-description">Realizava a reposição de mercadorias dispostas no estabelecimento, organizava estoque e auxiliava no recebimento de produtos.
+                                </span>
+                                </div>
+                              </a>
+                            </section>
+                          </div><!-- /content -->
+                        </div><!-- Fim Grids -->
+                      </div>
+                </div>
+              </div>
+            </div> <!-- Controle de Display -->
+  
+            <div class="hability display fadeInUp" style="display: none">
+              <div class="container">
+                <div class="row mb-5">
+                  <h3 class="my-4">Skill</h3>
+                  <div class="container">
+                  <div class="grid">
+                    <a href="#" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover fadeInUp">
+                      <img src="assets/img/php.svg" width="50px">
+                      <p class="text-center text-break pt-2" style="color: #787cb4;"> PHP </p>
+                    </a>
+                    <a href="#" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover fadeInUp">
+                      <img src="assets/img/javascript.svg" width="50px">
+                      <p class="text-center text-break pt-2" style="color: #ffd600;"> JavaScript</p>
+                    </a>
+                    <a href="#" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover fadeInUp">
+                      <img src="assets/img/java.svg" width="50px">
+                      <p class="text-center text-break pt-2" style="color: #1565C0;"> JAVA</p>
+                    </a>
+                    <a href="#" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover fadeInUp">
+                      <img src="assets/img/flutter.svg" width="50px">
+                      <p class="text-center text-break pt-2" style="color: #40C4FF;"> Flutter</p>
+                    </a>
+                    <a href="#" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover fadeInUp delay-1">
+                      <img src="assets/img/css3.svg" width="50px">
+                      <p class="text-center text-break pt-2" style="color: #0277BD;"> CSS</p>
+                    </a>
+                    <a href="#" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover fadeInUp delay-1">
+                      <img src="assets/img/mysql.svg" width="50px">
+                      <p class="text-center text-break pt-2" style="color: #00796B;"> MySQL</p>
+                    </a>  
+                  </div>
+
+                 
+                  </div>
+                    <h3 class="my-4">Habilidades</h3>
+                    <div class="container mt-3">
+        
+                      <div class="my-4 mt-md-0">
+                        <div class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center p-4">
+                          <div class="w-100 text-center fadeInUp delay-2">
+                            <div class="container-hability">
+                              <div class="hability-bar">
+                                <span>Desenvolvimento</span>
+                                <div class="hability-level">
+                                  <div class="fill dot"></div>
+                                  <div class="fill dot"></div>
+                                  <div class="fill dot"></div>
+                                  <div class="fill dot"></div>
+                                  <div class="fill dot"></div>
+                                </div>
+                              </div>
+                              <div class="hability-bar">
+                                <span>Trabalho em equipe</span>
+                                <div class="hability-level">
+                                  <div class="fill dot"></div>
+                                  <div class="fill dot"></div>
+                                  <div class="fill dot"></div>
+                                  <div class="clean"></div>
+                                  <div class="clean"></div>
+                                </div>
+                              </div>
+                              <div class="hability-bar">
+                                <span>Proatividade</span>
+                                <div class="hability-level">
+                                  <div class="fill dot"></div>
+                                  <div class="fill dot"></div>
+                                  <div class="fill dot"></div>
+                                  <div class="fill dot"></div>
+                                  <div class="fill dot"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                    
+                </div>
+              </div>
+              
+            </div> <!-- Controle de Display -->
+  
+            
+  
+            <div class="project display fadeInUp" style="display: none">
+              <div class="container">
+                <div class="row mb-5">
+                  <h3 class="my-4">Projetos</h3>
+                  <div class="container">
+                  <div class="grid">
+                    <a href="#" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover fadeInUp">
+                      <img src="assets/img/php.svg" width="50px">
+                      <p class="text-center text-break pt-2" style="color: #787cb4;"> PHP </p>
+                    </a>
+                  </div>
+                  </div>
+                </div>
+              </div>  
+            </div>    
+    
+  
+         
+        </div>
+      </div>
+  
+    </div>
+
+    <script src="assets/app.js"></script>
 </body>
 </html>
