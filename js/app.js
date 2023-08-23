@@ -123,3 +123,23 @@ $(".list-group a").click(function () {
     }
   }
 });
+
+
+function downloadFile(){
+  var fileUrl = './archives/diploma.pdf';
+  var fileName = 'Diploma - Wagner Santos.pdf';
+
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', fileUrl, true);
+  xhr.responseType = 'blob';
+
+  xhr.onload = function(){
+    var blob = xhr.response;
+    var link = document.createElement('a');
+    link.href = window.URL.createObjectURL(blob);
+    link.download = fileName;
+    link.click();
+  };
+
+  xhr.send();
+}
