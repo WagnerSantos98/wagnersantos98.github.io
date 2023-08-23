@@ -1194,3 +1194,18 @@
   border: 0.1rem #ff6d00 solid;
 }
 
+.download{
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  background-color: #007bff;
+  margin-left: 75%;
+  cursor: pointer;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.075);
+}
+
+.lni-download{
+  padding: 2px 2px 2px 2px;
+  color: #fff;
+  font-size: x-large;
+}
