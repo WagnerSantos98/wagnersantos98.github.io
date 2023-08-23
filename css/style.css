@@ -1194,7 +1194,7 @@
   border: 0.1rem #ff6d00 solid;
 }
 
-.download{
+.btn-option{
   border: none;
   border-radius: 5px;
   width: 40px;
@@ -1208,4 +1208,10 @@
   padding: 2px 2px 2px 2px;
   color: #fff;
   font-size: x-large;
+}
+
+.material-icons{
+  color: #6c757d;
+  font-size: xx-large;
+  margin-left: 75%;
 }
