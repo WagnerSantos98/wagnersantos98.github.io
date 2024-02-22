@@ -143,3 +143,17 @@ function downloadFile(){
 
   xhr.send();
 }
+
+$(document).ready(function() {
+  $("#expandButton").click(function() {
+      var imageUrl = $("#diplomaImage").attr("src");
+      $("#enlargedImage").attr("src", imageUrl);
+      $("#overlay").removeClass("hidden").fadeIn();
+  });
+
+  $("#closeIcon").click(function() {
+      $("#overlay").fadeOut(function() {
+          $(this).addClass("hidden");
+      });
+  });
+});

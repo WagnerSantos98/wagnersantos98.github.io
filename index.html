@@ -254,10 +254,10 @@
                   <h3 class="my-4">Certificações</h3>
                   <div class="container">
                     <div class="grid">
-                      <a href="#" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover fadeInUp">
-                        <img src="img/diploma.png" width="183.91">
+                      <a href="#!" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover fadeInUp">
+                        <img id="diplomaImage" src="img/diploma.png" width="183.91">
                         <p class="text-center text-break pt-2" style="color: #000;">Diploma - Tecnologo em Análise e Desenvolvimento de Sistemas</p>
-                        <button class="btn-option" onclick="" style="width: 38px; height: 38px;"><img src="img/full-screen.svg" width="16px"></button>
+                        <button id="expandButton" class="btn-option" onclick="" style="width: 38px; height: 38px;"><img src="img/full-screen.svg" width="16px"></button>
                       </a>
                       <a href="#" class="card shadow-card rounded-lg border-0 d-flex align-items-center justify-content-center py-4 px-2 hover fadeInUp">
                         <img src="img/google_nv1.png" width="183.91">
@@ -321,6 +321,12 @@
                   </div>
                     
                 </div>
+              </div>
+              <div id="overlay" class="hidden">
+                <img id="enlargedImage">
+                <span id="closeIcon" class="btn btn-secondary" style="position: absolute; top: 10px; right: 10px; cursor: pointer;">
+                  <i class="lni lni-close"></i>
+              </span>
               </div>
               
             </div> <!-- Controle de Display -->
