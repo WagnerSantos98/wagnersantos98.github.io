@@ -126,15 +126,15 @@ $(".list-group a").click(function () {
 
 
 $(document).ready(function() {
-  $("#expandButton").click(function() {
-      var imageUrl = $("#diplomaImage").attr("src");
-      $("#enlargedImage").attr("src", imageUrl);
-      $("#overlay").removeClass("hidden").fadeIn();
+  $(".expandButton").click(function() {
+      var imageUrl = $(this).siblings(".diplomaImage").attr("src"); // Obtém a imagem associada ao botão clicado
+      $("#enlargedImage").attr("src", imageUrl); // Atualiza a imagem no overlay
+      $("#overlay").removeClass("hidden").fadeIn(); // Exibe o overlay
   });
 
   $("#closeIcon").click(function() {
       $("#overlay").fadeOut(function() {
-          $(this).addClass("hidden");
+          $(this).addClass("hidden"); // Oculta o overlay
       });
   });
 });

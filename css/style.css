@@ -1232,24 +1232,39 @@
   margin-left: 75%;
 }
 
-#overlay{
-  display: flex;
+#overlay {
+  display: none;
   position: fixed;
-  top: 100px;
-  left: 30%;
+  top: 40%; /* Centraliza verticalmente */
+  left: 60%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Garante centralização exata */
   justify-content: center;
   align-items: center;
+  padding: 20px; /* Espaçamento ao redor da imagem */
+  z-index: 1000;
 }
 
-#enlargeImage{
-  max-width: 90%;
-  max-height: 90%;
+#enlargedImage {
+  width: 800px; /* Largura fixa */
+  height: 565px; /* Altura fixa */
+  object-fit: cover; /* Ajuste da imagem para cobrir o espaço */
 }
 
-#closeIcon{
+#closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  opacity: 90%;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.9; /* Leve transparência */
+  background-color: rgba(0, 0, 0, 0.9); /* Fundo do ícone de fechar */
+  padding: 5px;
 }
+
 
 #overlay.hidden #closeIcon {
   display: none;
