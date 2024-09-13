@@ -126,15 +126,34 @@ $(".list-group a").click(function () {
 
 
 $(document).ready(function() {
-  $(".expandButton").click(function() {
-      var imageUrl = $(this).siblings(".diplomaImage").attr("src"); // Obtém a imagem associada ao botão clicado
-      $("#enlargedImage").attr("src", imageUrl); // Atualiza a imagem no overlay
-      $("#overlay").removeClass("hidden").fadeIn(); // Exibe o overlay
+  // Função para mostrar o overlay com a imagem ampliada
+  function showOverlay(imageUrl) {
+    $("#enlargedImage").attr("src", imageUrl);
+    $("#overlay").removeClass("hidden").fadeIn();
+  }
+
+  // Manipulador de clique para o botão e o link
+  $(".card, .expandButton").click(function(event) {
+    // Evita que o clique no botão de expansão não acione o link
+    if ($(event.target).is(".expandButton") || $(this).is(".card")) {
+      var imageUrl;
+      
+      // Verifica se o clique foi no botão ou no link
+      if ($(event.target).is(".expandButton")) {
+        imageUrl = $(this).siblings(".diplomaImage").attr("src");
+      } else {
+        imageUrl = $(this).find(".diplomaImage").attr("src");
+      }
+
+      showOverlay(imageUrl);
+    }
   });
 
+  // Fechar o overlay ao clicar no ícone de fechar
   $("#closeIcon").click(function() {
-      $("#overlay").fadeOut(function() {
-          $(this).addClass("hidden"); // Oculta o overlay
-      });
+    $("#overlay").fadeOut(function() {
+      $(this).addClass("hidden");
+    });
   });
 });
+

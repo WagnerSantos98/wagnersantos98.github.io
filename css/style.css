@@ -1236,7 +1236,7 @@
   display: none;
   position: fixed;
   top: 40%; /* Centraliza verticalmente */
-  left: 60%; /* Centraliza horizontalmente */
+  left: 80%; /* Centraliza horizontalmente */
   transform: translate(-50%, -50%); /* Garante centralização exata */
   justify-content: center;
   align-items: center;
@@ -1265,7 +1265,24 @@
   padding: 5px;
 }
 
-
 #overlay.hidden #closeIcon {
   display: none;
+}
+
+.expandButton {
+  position: absolute;
+  bottom: 10px; /* Ajusta a distância da parte inferior */
+  right: 10px; /* Ajusta a distância do lado direito */
+  width: 38px;
+  height: 38px;
+  background-color: #007bff; /* Fundo com leve transparência (opcional) */
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expandButton img {
+  width: 16px;
 }
