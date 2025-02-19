@@ -1286,3 +1286,47 @@
 .expandButton img {
   width: 16px;
 }
+
+/*=============== Modal Carousel de Projetos ===============*/
+
+/* Altera a cor do ícone do botão "Anterior" */
+.carousel-control-prev-icon {
+  background-color: rgba(108, 117, 125, 0.7);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+/* Altera a cor do ícone do botão "Próximo" */
+.carousel-control-next-icon {
+  background-color: rgba(108, 117, 125, 0.7); 
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+/* Estilização dos botões */
+.btn-link {
+  display: inline-flex; /* Mantém alinhado com ícone */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 20px; 
+  border-radius: 8px; 
+  transition: background-color 0.3s ease; 
+}
+
+/* Efeito hover para feedback visual */
+.btn-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+/* Ícones dentro dos botões */
+.btn-link i {
+  font-size: 28px;
+  color: #fff; 
+}
+
+/* Ajuste do espaçamento entre botões */
+.btn-link + .btn-link {
+  margin-left: 20px; 
+}

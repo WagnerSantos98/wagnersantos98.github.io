@@ -157,3 +157,44 @@ $(document).ready(function() {
   });
 });
 
+// Espera o DOM estar completamente carregado
+document.addEventListener("DOMContentLoaded", function () {
+  // Seleciona o botão que abre o modal
+  const openCarouselButton = document.querySelector('.open-carousel');
+
+  // Adiciona o evento de clique ao botão
+  openCarouselButton.addEventListener('click', function () {
+      // Mostra o modal
+      $('#carouselModal').modal('show');
+  });
+
+  // Adiciona o evento de clique para fechar o modal
+  const closeModalButtons = document.querySelectorAll('.close');
+  closeModalButtons.forEach(button => {
+      button.addEventListener('click', function () {
+          // Fecha o modal
+          $('#carouselModal').modal('hide');
+      });
+  });
+
+  // Adiciona eventos para os botões de controle do carrossel
+  const prevButton = document.querySelector('.carousel-control-prev');
+  const nextButton = document.querySelector('.carousel-control-next');
+
+  prevButton.addEventListener('click', function () {
+      // Move para o slide anterior
+      $('#projectCarousel').carousel('prev');
+  });
+
+  nextButton.addEventListener('click', function () {
+      // Move para o próximo slide
+      $('#projectCarousel').carousel('next');
+  });
+});
+
+function openPdf(pdfUrl){
+  window.open(pdfUrl, '_blank');
+}
+
+
+
